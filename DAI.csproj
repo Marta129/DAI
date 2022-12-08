@@ -1,0 +1,471 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Assets\Background\Fighting Scene\**" />
+    <Compile Remove="Assets\Martial Hero0\Attack\Original\**" />
+    <Compile Remove="Assets\Martial Hero0\Attack\Reversed\**" />
+    <Compile Remove="Assets\Martial Hero0\Death\Original\**" />
+    <Compile Remove="Assets\Martial Hero0\Death\Reversed\**" />
+    <Compile Remove="Assets\Martial Hero0\Fall\Original\**" />
+    <Compile Remove="Assets\Martial Hero0\Fall\Reversed\**" />
+    <Compile Remove="Assets\Martial Hero0\Idle\Original\**" />
+    <Compile Remove="Assets\Martial Hero0\Idle\Reversed\**" />
+    <Compile Remove="Assets\Martial Hero0\Jump\Original\**" />
+    <Compile Remove="Assets\Martial Hero0\Jump\Reversed\**" />
+    <Compile Remove="Assets\Martial Hero0\Run\Original\**" />
+    <Compile Remove="Assets\Martial Hero0\Run\Reversed\**" />
+    <Compile Remove="Assets\Martial Hero0\Take Hit\Original\**" />
+    <Compile Remove="Assets\Martial Hero0\Take Hit\Reversed\**" />
+    <Compile Remove="Assets\Martial Hero0\Test\**" />
+    <Compile Remove="Assets\Martial Hero2\**" />
+    <Compile Remove="Assets\Martial Hero\**" />
+    <EmbeddedResource Remove="Assets\Background\Fighting Scene\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Attack\Original\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Attack\Reversed\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Death\Original\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Death\Reversed\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Fall\Original\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Fall\Reversed\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Idle\Original\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Idle\Reversed\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Jump\Original\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Jump\Reversed\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Run\Original\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Run\Reversed\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Take Hit\Original\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Take Hit\Reversed\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero0\Test\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero2\**" />
+    <EmbeddedResource Remove="Assets\Martial Hero\**" />
+    <None Remove="Assets\Background\Fighting Scene\**" />
+    <None Remove="Assets\Martial Hero0\Attack\Original\**" />
+    <None Remove="Assets\Martial Hero0\Attack\Reversed\**" />
+    <None Remove="Assets\Martial Hero0\Death\Original\**" />
+    <None Remove="Assets\Martial Hero0\Death\Reversed\**" />
+    <None Remove="Assets\Martial Hero0\Fall\Original\**" />
+    <None Remove="Assets\Martial Hero0\Fall\Reversed\**" />
+    <None Remove="Assets\Martial Hero0\Idle\Original\**" />
+    <None Remove="Assets\Martial Hero0\Idle\Reversed\**" />
+    <None Remove="Assets\Martial Hero0\Jump\Original\**" />
+    <None Remove="Assets\Martial Hero0\Jump\Reversed\**" />
+    <None Remove="Assets\Martial Hero0\Run\Original\**" />
+    <None Remove="Assets\Martial Hero0\Run\Reversed\**" />
+    <None Remove="Assets\Martial Hero0\Take Hit\Original\**" />
+    <None Remove="Assets\Martial Hero0\Take Hit\Reversed\**" />
+    <None Remove="Assets\Martial Hero0\Test\**" />
+    <None Remove="Assets\Martial Hero2\**" />
+    <None Remove="Assets\Martial Hero\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Background Song.mp3" />
+    <None Remove="Assets\Background Song.wav" />
+    <None Remove="Assets\Background\Background.jpg" />
+    <None Remove="Assets\Background\Background.png" />
+    <None Remove="Assets\Background\Fighting Scene.png" />
+    <None Remove="Assets\Background\Shop\tile000.png" />
+    <None Remove="Assets\Background\Shop\tile001.png" />
+    <None Remove="Assets\Background\Shop\tile002.png" />
+    <None Remove="Assets\Background\Shop\tile003.png" />
+    <None Remove="Assets\Background\Shop\tile004.png" />
+    <None Remove="Assets\Background\Shop\tile005.png" />
+    <None Remove="Assets\Characters\Martial Hero 1\Original\tile000.gif" />
+    <None Remove="Assets\Characters\Martial Hero 1\Reversed\tile000.gif" />
+    <None Remove="Assets\Characters\Martial Hero 2\Original\tile000.gif" />
+    <None Remove="Assets\Characters\Martial Hero 2\Reversed\tile000.gif" />
+    <None Remove="Assets\Characters\Martial Hero\Original\tile000.gif" />
+    <None Remove="Assets\Characters\Martial Hero\Reversed\tile000.gif" />
+    <None Remove="Assets\Controls\A-key.png" />
+    <None Remove="Assets\Controls\D-key.png" />
+    <None Remove="Assets\Controls\Enter-key.png" />
+    <None Remove="Assets\Controls\Esc.png" />
+    <None Remove="Assets\Controls\Left-key.png" />
+    <None Remove="Assets\Controls\Right-key.png" />
+    <None Remove="Assets\Controls\Space-key.png" />
+    <None Remove="Assets\Controls\Up-key.png" />
+    <None Remove="Assets\Controls\W-key.png" />
+    <None Remove="Assets\Cursor.png" />
+    <None Remove="Assets\Martial Hero0\Attack\tile000.png" />
+    <None Remove="Assets\Martial Hero0\Attack\tile001.png" />
+    <None Remove="Assets\Martial Hero0\Attack\tile002.png" />
+    <None Remove="Assets\Martial Hero0\Attack\tile003.png" />
+    <None Remove="Assets\Martial Hero0\Attack\tile004.png" />
+    <None Remove="Assets\Martial Hero0\Attack\tile005.png" />
+    <None Remove="Assets\Martial Hero0\Death\tile000.png" />
+    <None Remove="Assets\Martial Hero0\Death\tile001.png" />
+    <None Remove="Assets\Martial Hero0\Death\tile002.png" />
+    <None Remove="Assets\Martial Hero0\Death\tile003.png" />
+    <None Remove="Assets\Martial Hero0\Death\tile004.png" />
+    <None Remove="Assets\Martial Hero0\Death\tile005.png" />
+    <None Remove="Assets\Martial Hero0\Fall\tile000.png" />
+    <None Remove="Assets\Martial Hero0\Fall\tile001.png" />
+    <None Remove="Assets\Martial Hero0\Idle\tile000.png" />
+    <None Remove="Assets\Martial Hero0\Idle\tile001.png" />
+    <None Remove="Assets\Martial Hero0\Idle\tile002.png" />
+    <None Remove="Assets\Martial Hero0\Idle\tile003.png" />
+    <None Remove="Assets\Martial Hero0\Idle\tile004.png" />
+    <None Remove="Assets\Martial Hero0\Idle\tile005.png" />
+    <None Remove="Assets\Martial Hero0\Idle\tile006.png" />
+    <None Remove="Assets\Martial Hero0\Idle\tile007.png" />
+    <None Remove="Assets\Martial Hero0\Jump\tile000.png" />
+    <None Remove="Assets\Martial Hero0\Jump\tile000_scaled_10x_pngcrushed.png" />
+    <None Remove="Assets\Martial Hero0\Jump\tile001.png" />
+    <None Remove="Assets\Martial Hero0\Run\tile000.png" />
+    <None Remove="Assets\Martial Hero0\Run\tile001.png" />
+    <None Remove="Assets\Martial Hero0\Run\tile002.png" />
+    <None Remove="Assets\Martial Hero0\Run\tile003.png" />
+    <None Remove="Assets\Martial Hero0\Run\tile004.png" />
+    <None Remove="Assets\Martial Hero0\Run\tile005.png" />
+    <None Remove="Assets\Martial Hero0\Run\tile006.png" />
+    <None Remove="Assets\Martial Hero0\Run\tile007.png" />
+    <None Remove="Assets\Martial Hero0\Take Hit\tile000.png" />
+    <None Remove="Assets\Martial Hero0\Take Hit\tile001.png" />
+    <None Remove="Assets\Martial Hero0\Take Hit\tile002.png" />
+    <None Remove="Assets\Martial Hero0\Take Hit\tile003.png" />
+    <None Remove="Assets\Martial Hero1\Attack\tile000.png" />
+    <None Remove="Assets\Martial Hero1\Attack\tile001.png" />
+    <None Remove="Assets\Martial Hero1\Attack\tile002.png" />
+    <None Remove="Assets\Martial Hero1\Attack\tile003.png" />
+    <None Remove="Assets\Martial Hero1\Death\tile000.png" />
+    <None Remove="Assets\Martial Hero1\Death\tile001.png" />
+    <None Remove="Assets\Martial Hero1\Death\tile002.png" />
+    <None Remove="Assets\Martial Hero1\Death\tile003.png" />
+    <None Remove="Assets\Martial Hero1\Death\tile004.png" />
+    <None Remove="Assets\Martial Hero1\Death\tile005.png" />
+    <None Remove="Assets\Martial Hero1\Death\tile006.png" />
+    <None Remove="Assets\Martial Hero1\Fall\tile000.png" />
+    <None Remove="Assets\Martial Hero1\Fall\tile001.png" />
+    <None Remove="Assets\Martial Hero1\Idle\tile000.png" />
+    <None Remove="Assets\Martial Hero1\Idle\tile001.png" />
+    <None Remove="Assets\Martial Hero1\Idle\tile002.png" />
+    <None Remove="Assets\Martial Hero1\Idle\tile003.png" />
+    <None Remove="Assets\Martial Hero1\Jump\tile000.png" />
+    <None Remove="Assets\Martial Hero1\Jump\tile001.png" />
+    <None Remove="Assets\Martial Hero1\Run\tile000.png" />
+    <None Remove="Assets\Martial Hero1\Run\tile001.png" />
+    <None Remove="Assets\Martial Hero1\Run\tile002.png" />
+    <None Remove="Assets\Martial Hero1\Run\tile003.png" />
+    <None Remove="Assets\Martial Hero1\Run\tile004.png" />
+    <None Remove="Assets\Martial Hero1\Run\tile005.png" />
+    <None Remove="Assets\Martial Hero1\Run\tile006.png" />
+    <None Remove="Assets\Martial Hero1\Run\tile007.png" />
+    <None Remove="Assets\Martial Hero1\Take Hit\tile000.png" />
+    <None Remove="Assets\Martial Hero1\Take Hit\tile001.png" />
+    <None Remove="Assets\Martial Hero1\Take Hit\tile002.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Background Song.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Background\Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Background\Fighting Scene.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Background\Shop\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Background\Shop\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Background\Shop\tile002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Background\Shop\tile003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Background\Shop\tile004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Background\Shop\tile005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Characters\Martial Hero 1\Original\tile000.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Characters\Martial Hero 1\Reversed\tile000.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Characters\Martial Hero 2\Original\tile000.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Characters\Martial Hero 2\Reversed\tile000.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Characters\Martial Hero\Original\tile000.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Characters\Martial Hero\Reversed\tile000.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Controls\A-key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Controls\D-key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Controls\Enter-key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Controls\Esc.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Controls\Left-key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Controls\Right-key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Controls\Space-key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Controls\Up-key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Controls\W-key.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cursor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Attack\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Attack\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Attack\tile002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Attack\tile003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Attack\tile004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Attack\tile005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Death\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Death\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Death\tile002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Death\tile003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Death\tile004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Death\tile005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Fall\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Fall\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Idle\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Idle\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Idle\tile002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Idle\tile003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Idle\tile004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Idle\tile005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Idle\tile006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Idle\tile007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Jump\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Jump\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Run\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Run\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Run\tile002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Run\tile003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Run\tile004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Run\tile005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Run\tile006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Run\tile007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Take Hit\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Take Hit\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Take Hit\tile002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero0\Take Hit\tile003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Attack\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Attack\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Attack\tile002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Attack\tile003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Death\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Death\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Death\tile002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Death\tile003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Death\tile004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Death\tile005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Death\tile006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Fall\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Fall\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Idle\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Idle\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Idle\tile002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Idle\tile003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Jump\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Jump\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Run\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Run\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Run\tile002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Run\tile003.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Run\tile004.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Run\tile005.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Run\tile006.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Run\tile007.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Take Hit\tile000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Take Hit\tile001.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Martial Hero1\Take Hit\tile002.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
